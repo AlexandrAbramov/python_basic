@@ -9,7 +9,7 @@ res_a_b = set_a - set_b
 res_b_c = set_b - set_c
 res_a_c = set_a - set_c
 print(res_a_b, res_b_c, res_a_c)
-#  3. Отримати загальні елементи між set_a і set_b, set_b і set_c
+#  3. Отримати загальні елементи між set_a і set_b, set_b і set_c.
 res_a_b = set_a & set_b
 res_b_c = set_b & set_c
 res_a_c = set_a & set_c
@@ -19,15 +19,14 @@ set1 = {1, 2}
 print(set1 <= set_a, set1 <= set_b, set1 <= set_c)
 #  5. Використовуючи результат res з задачі 1 створити два set res_1, res_2
 #  res_1 тільки парні, res_2 тільки непарні.
-res.add(0)
-res2 = set()
 res1 = set()
+res2 = set()
 for i in res:
-    if i in range(0, 12, 2):
-        continue
-    res2.add(i)
-for i in res:
-    if i in range(1, 12, 2):
+    if i % 2 != 0:
         continue
     res1.add(i)
+for i in res:
+    if i % 2 != 1:
+        continue
+    res2.add(i)
 print(res1, res2)
