@@ -10,8 +10,9 @@ dict_b = {'key_6': 'value_6',
           'key_8': 'value_8',
           'key_9': 'value_9',
           'key_10': 'value_10'}
-dict_a.update(dict_b)
-dict_d = dict_a.copy()
+dict_d = {}
+dict_d.update(dict_a)
+dict_d.update(dict_b)
 print(dict_d)
 #  2. Взяти ключі словника dict_a і значення словника dict_b і зробити загальний словник:
 d1 = list(dict_a.keys())
